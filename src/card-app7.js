@@ -1,3 +1,5 @@
+import "@lrnwebcomponents/meme-maker/meme-maker.js";
+import "@lrnwebcomponents/accent-card/accent-card.js"; 
 import { LitElement, html, css } from 'lit';
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
@@ -58,6 +60,16 @@ class CardApp7 extends LitElement {
   render() {
     return html`
       <main>
+      <meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death">
+</meme-maker>
+<meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death">
+</meme-maker>
+<meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death">
+</meme-maker>
+<accent-card image-src="https://webcomponents.psu.edu/elements/accent-card/demo/images/image5.jpg" accent-color="red" accent-heading style="max-width:600px;">
+  <div slot="heading">Pellentesque Eget Sit Purus Massa</div>
+  <div slot="content">Consectetur sed neque. Pellentesque phasellus at etiam. Nostra eu scelerisque phasellus dis neque pulvinar.</div>
+</accent-card>
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.header}</h1>
 
@@ -72,15 +84,7 @@ class CardApp7 extends LitElement {
         </a>
       </main>
 
-      <p class="app-footer">
-        🚽 Made with love by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/open-wc"
-          >open-wc</a
-        >.
-      </p>
+    
     `;
   }
 }
